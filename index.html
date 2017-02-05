@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Sample App</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+    <style>
+    body {
+      background: #eaeaea;
+    }
+
+    .modal {
+      color: #333;
+      display: none;
+      background: #fff;
+      width: 400px;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 20px 20px 20px rgba(0, 0, 0, .1);
+      left: 25%;
+      top: 25%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal.modal--open {
+        display: block;
+    }
+
+    .modal__panel {
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      text-align: center;
+      right: 0;
+      top: 0;
+    }
+
+    .modal-multi-part__panels {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      height:200px;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      position: relative;
+    }
+
+    </style>
+</head>
+<body>
+    <div id='root'></div>
+    <script src="/static/bundle.js"></script>
+</body>
+</html>
